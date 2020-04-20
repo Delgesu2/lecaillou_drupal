@@ -1,0 +1,31 @@
+uuid: 93db9364-3352-4712-934c-d505f2ef0005
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34168a99-e32c-4153-9e8d-e89c764a2fc5'
+  module:
+    - block_content
+    - system
+  theme:
+    - lecaillou
+id: openstreetmap
+theme: lecaillou
+region: featured_bottom_first
+weight: -6
+provider: null
+plugin: 'block_content:34168a99-e32c-4153-9e8d-e89c764a2fc5'
+settings:
+  id: 'block_content:34168a99-e32c-4153-9e8d-e89c764a2fc5'
+  label: 'Nous trouver'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /informations
+    negate: false
+    context_mapping: {  }

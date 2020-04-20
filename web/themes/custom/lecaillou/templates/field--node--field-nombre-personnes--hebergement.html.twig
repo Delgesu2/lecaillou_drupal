@@ -1,0 +1,25 @@
+{%
+    set classes = [
+    'field',
+    'field--label-' ~ label_display,
+    'clearfix',
+    'text-align-center',
+    'ecriture'
+]
+%}
+{%
+    set title_classes = [
+    'field__label',
+    label_display == 'inline' ? 'inline',
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+    {% if not label_hidden %}
+        <h3{{ title_attributes.addClass(title_classes) }}>{{ label }}</h3>
+    {% endif %}
+
+    {% for item in items %}
+        <span{{ item.attributes }}><mark>{{ item.content }}</mark></span>
+    {% endfor %}
+</div>

@@ -1,0 +1,18 @@
+uuid: 6a25d96e-02f3-4aa5-b03e-748ff85afc89
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.carousel_slick
+id: node.carousel_slick.title
+field_name: title
+entity_type: node
+bundle: carousel_slick
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

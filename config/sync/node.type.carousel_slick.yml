@@ -1,0 +1,18 @@
+uuid: b8d928b0-3598-4c55-b728-72f00fb20907
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Carousel Slick'
+type: carousel_slick
+description: 'Créer un carousel Slick'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

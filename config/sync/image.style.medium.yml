@@ -1,0 +1,33 @@
+uuid: e7c8a61f-fd3c-4905-9514-0a2f5cc5059a
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Y9NmnZHQq20ASSyTNA6JnwtWrJJiSajOehGDtmUFdM0
+name: medium
+label: 'Moyen (400x600)'
+effects:
+  a5e7765c-f394-475a-9559-cf68bbfee65d:
+    uuid: a5e7765c-f394-475a-9559-cf68bbfee65d
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: 400
+      upscale: true
+  7819e985-390d-46b5-bdaf-d48fbd457b8c:
+    uuid: 7819e985-390d-46b5-bdaf-d48fbd457b8c
+    id: image_rotate
+    weight: 2
+    data:
+      degrees: 90
+      bgcolor: ''
+      random: false
+  3173984a-cd7f-4b20-bd0d-7bd90031e33b:
+    uuid: 3173984a-cd7f-4b20-bd0d-7bd90031e33b
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 400
+      height: 600
+      anchor: center-center

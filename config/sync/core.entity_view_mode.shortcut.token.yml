@@ -1,0 +1,10 @@
+uuid: d6bfc76e-9caf-4cc6-82c6-fcc2134d76bb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - shortcut
+id: shortcut.token
+label: 'Jeton (token)'
+targetEntityType: shortcut
+cache: true

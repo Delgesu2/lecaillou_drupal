@@ -1,0 +1,22 @@
+uuid: ffb052b7-a3ae-4a20-8fb4-af60ff651675
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lecaillou
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: lecaillou_help
+theme: lecaillou
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+palette:
+  top: '#d3d3d3'
+  bottom: '#f8f9fa'
+  bg: '#deb887'
+  sidebar: '#f6f6f2'
+  sidebarborders: '#f9f9f9'
+  footer: '#292929'
+  button: '#007bff'
+  buttonhover: '#0256b1'
+  titleslogan: '#fffeff'
+  text: '#3b3b3b'
+  link: '#3b3b3b'
+logo: 'public://color/lecaillou-f7e2cbbc/logo.svg'
+stylesheets:
+  - 'public://color/lecaillou-f7e2cbbc/colors.css'
+files:
+  - 'public://color/lecaillou-f7e2cbbc/logo.svg'
+  - 'public://color/lecaillou-f7e2cbbc/colors.css'

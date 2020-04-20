@@ -1,0 +1,15 @@
+uuid: 6c696284-1bc3-419e-8b05-82c159791b81
+langcode: fr
+status: true
+dependencies: {  }
+name: moyenne_panoramique
+label: 'Moyenne panoramique'
+effects:
+  877c8ca8-500a-46b3-9601-795717176f34:
+    uuid: 877c8ca8-500a-46b3-9601-795717176f34
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: 400
+      upscale: false

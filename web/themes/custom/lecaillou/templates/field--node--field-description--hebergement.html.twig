@@ -1,0 +1,15 @@
+{%
+    set classes = [
+    'field',
+    'field--label-' ~ label_display,
+    'clearfix',
+    'text-align-center',
+    'ecriture'
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+    {% for item in items %}
+        <p{{ item.attributes }}>{{ item.content }}</p>
+    {% endfor %}
+</div>

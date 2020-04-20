@@ -1,0 +1,31 @@
+uuid: 4af0b9fe-904e-4cc5-aabd-38986215aa5f
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ef5b6abb-372d-44c8-8518-a1148e469286'
+  module:
+    - block_content
+    - system
+  theme:
+    - lecaillou
+id: mentionslegales
+theme: lecaillou
+region: featured_bottom_second
+weight: -6
+provider: null
+plugin: 'block_content:ef5b6abb-372d-44c8-8518-a1148e469286'
+settings:
+  id: 'block_content:ef5b6abb-372d-44c8-8518-a1148e469286'
+  label: 'Mentions légales'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /informations
+    negate: false
+    context_mapping: {  }

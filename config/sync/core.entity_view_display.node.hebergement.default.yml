@@ -1,0 +1,99 @@
+uuid: f7b92118-7e89-423c-96db-ecc490f61d9b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.hebergement.field_description
+    - field.field.node.hebergement.field_details_tarif_
+    - field.field.node.hebergement.field_deux_personnes_
+    - field.field.node.hebergement.field_nombre_personnes
+    - field.field.node.hebergement.field_personne_supplementaire_
+    - field.field.node.hebergement.field_photo_accroche
+    - field.field.node.hebergement.field_photo_hebergement
+    - field.field.node.hebergement.field_titre
+    - field.field.node.hebergement.field_une_personne_
+    - image.style.max_650x650
+    - node.type.hebergement
+  module:
+    - image
+    - user
+id: node.hebergement.default
+targetEntityType: node
+bundle: hebergement
+mode: default
+content:
+  field_description:
+    weight: 3
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_details_tarif_:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_deux_personnes_:
+    weight: 5
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_nombre_personnes:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_personne_supplementaire_:
+    weight: 6
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_photo_hebergement:
+    type: image
+    weight: 8
+    region: content
+    label: visually_hidden
+    settings:
+      image_style: max_650x650
+      image_link: ''
+    third_party_settings: {  }
+  field_titre:
+    type: string
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_une_personne_:
+    weight: 4
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_photo_accroche: true
+  langcode: true

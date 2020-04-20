@@ -1,0 +1,24 @@
+uuid: b359f934-e2d9-49fd-8093-e45c2f8e2434
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.guestbooks
+_core:
+  default_config_hash: 02ujmlnaPcg3YtSePFya-eNzA3iU8_6HaDbgnvvMi10
+id: node.guestbooks.status
+field_name: status
+entity_type: node
+bundle: guestbooks
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

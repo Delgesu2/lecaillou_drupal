@@ -1,0 +1,19 @@
+uuid: c24ea915-4ce5-402d-ab07-f0bff1da9af4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_personnes
+    - node.type.hebergement
+id: node.hebergement.field_nombre_personnes
+field_name: field_nombre_personnes
+entity_type: node
+bundle: hebergement
+label: 'Nombre de personnes:'
+description: 'Détails pour le nombre de personnes (1, 2, adultes, enfants ...)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

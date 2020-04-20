@@ -1,0 +1,88 @@
+uuid: 680ba196-d7b6-47e8-bd18-c14f04f21bc6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.carousel_slick.body
+    - field.field.node.carousel_slick.field_diapo
+    - image.style.slick_media
+    - node.type.carousel_slick
+    - responsive_image.styles.wide
+  module:
+    - slick
+    - text
+    - user
+id: node.carousel_slick.default
+targetEntityType: node
+bundle: carousel_slick
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_diapo:
+    weight: 102
+    label: hidden
+    settings:
+      style: ''
+      optionset: default
+      optionset_thumbnail: ''
+      skin: classic
+      skin_thumbnail: ''
+      image_style: slick_media
+      responsive_image_style: wide
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: null
+      layout: below
+      thumbnail_caption: ''
+      caption:
+        title: title
+        alt: '0'
+      cache: 0
+      current_view_mode: default
+      background: false
+      preserve_keys: false
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      icon: ''
+      view_mode: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      box_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+    third_party_settings: {  }
+    type: slick_image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

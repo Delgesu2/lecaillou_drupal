@@ -1,0 +1,39 @@
+uuid: 1164fa57-75fd-43a3-a0b1-936fd1946993
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - user
+  theme:
+    - lecaillou
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: lecaillou_page_title
+theme: lecaillou
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Chambres
+  provider: core
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      paragraphe: paragraphe
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

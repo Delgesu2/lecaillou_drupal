@@ -1,0 +1,25 @@
+uuid: 2b319c41-597b-4f61-9181-8ad90234f59c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personne_supplementaire_
+    - node.type.hebergement
+id: node.hebergement.field_personne_supplementaire_
+field_name: field_personne_supplementaire_
+entity_type: node
+bundle: hebergement
+label: 'Personne supplémentaire:'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 15
+default_value_callback: ''
+settings:
+  min: 15
+  max: null
+  prefix: ''
+  suffix: ' €'
+field_type: integer

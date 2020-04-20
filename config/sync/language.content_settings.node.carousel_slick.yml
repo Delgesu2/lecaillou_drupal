@@ -1,0 +1,11 @@
+uuid: 97b26eec-2e49-4b31-bb99-655325396af9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.carousel_slick
+id: node.carousel_slick
+target_entity_type_id: node
+target_bundle: carousel_slick
+default_langcode: site_default
+language_alterable: false

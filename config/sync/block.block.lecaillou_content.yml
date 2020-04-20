@@ -1,0 +1,22 @@
+uuid: e22596ed-83d2-424f-a02e-0a6f4e67c1df
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lecaillou
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: lecaillou_content
+theme: lecaillou
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

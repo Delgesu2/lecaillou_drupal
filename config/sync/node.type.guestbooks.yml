@@ -1,0 +1,22 @@
+uuid: af216722-9897-4953-9559-7bb5c9b289f6
+langcode: fr
+status: true
+dependencies:
+  enforced:
+    module:
+      - guestbooks
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: Apj89w8Lpsb5DnOveeJcLLYvmFYca9obWyNg_0uYLKk
+name: Guestbooks
+type: guestbooks
+description: 'Track Guestbooks Entries for Site.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

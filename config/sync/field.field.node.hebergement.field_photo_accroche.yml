@@ -1,0 +1,38 @@
+uuid: 4d2e083a-e21a-4860-9012-e18d2652b828
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_accroche
+    - node.type.hebergement
+  module:
+    - image
+id: node.hebergement.field_photo_accroche
+field_name: field_photo_accroche
+entity_type: node
+bundle: hebergement
+label: 'Photo accroche'
+description: 'Image affichée pour la liste des chambres.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 330x150
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: 800da126-b5c9-4eeb-bffc-87fdc9227189
+    alt: placeholder
+    title: 'Sans photo de chambre'
+    width: 380
+    height: 380
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

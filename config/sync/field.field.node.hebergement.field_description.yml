@@ -1,0 +1,19 @@
+uuid: 8f99c4ad-d05e-4c77-90cb-80cbaeb5ec89
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.hebergement
+id: node.hebergement.field_description
+field_name: field_description
+entity_type: node
+bundle: hebergement
+label: Description
+description: 'Décrire la chambre, les lits, la salle de bain.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

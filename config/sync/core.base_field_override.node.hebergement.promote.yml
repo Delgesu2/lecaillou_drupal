@@ -1,0 +1,22 @@
+uuid: dc9d9cfe-9d90-4387-b163-dbe0680776fc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.hebergement
+id: node.hebergement.promote
+field_name: promote
+entity_type: node
+bundle: hebergement
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,47 @@
+uuid: 3e16c11e-6a08-4136-9a26-4c7a30d9fdfc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hebergement.field_description
+    - field.field.node.hebergement.field_details_tarif_
+    - field.field.node.hebergement.field_deux_personnes_
+    - field.field.node.hebergement.field_nombre_personnes
+    - field.field.node.hebergement.field_personne_supplementaire_
+    - field.field.node.hebergement.field_photo_accroche
+    - field.field.node.hebergement.field_photo_hebergement
+    - field.field.node.hebergement.field_titre
+    - field.field.node.hebergement.field_une_personne_
+    - image.style.medium
+    - node.type.hebergement
+  module:
+    - image_hover_effects
+    - user
+id: node.hebergement.teaser
+targetEntityType: node
+bundle: hebergement
+mode: teaser
+content:
+  field_photo_accroche:
+    type: image_hover_effects_image
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      image_style: medium
+      image_link: content
+      hover_effect: fade_in
+      hover_text: ''
+    third_party_settings: {  }
+hidden:
+  field_description: true
+  field_details_tarif_: true
+  field_deux_personnes_: true
+  field_nombre_personnes: true
+  field_personne_supplementaire_: true
+  field_photo_hebergement: true
+  field_titre: true
+  field_une_personne_: true
+  langcode: true
+  links: true

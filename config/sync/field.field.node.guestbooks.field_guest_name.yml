@@ -1,0 +1,21 @@
+uuid: b31d14ca-782b-473c-b25f-6373825c3de3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guest_name
+    - node.type.guestbooks
+_core:
+  default_config_hash: TK6lU91Se24NXchrpzSBP4cckOF1VuvYtYi-1haY9D0
+id: node.guestbooks.field_guest_name
+field_name: field_guest_name
+entity_type: node
+bundle: guestbooks
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

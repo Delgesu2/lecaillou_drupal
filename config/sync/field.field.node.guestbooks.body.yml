@@ -1,0 +1,25 @@
+uuid: 6cac7762-01a0-4ecf-b4fb-722b759089a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.guestbooks
+  module:
+    - text
+_core:
+  default_config_hash: '-Kd5ht6jYg0AD76gEY7ZzxwgXfEcPswUEAnvWzb5ivc'
+id: node.guestbooks.body
+field_name: body
+entity_type: node
+bundle: guestbooks
+label: Message
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

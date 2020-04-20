@@ -1,0 +1,20 @@
+uuid: 939d71f4-1a2a-4caa-b740-5d2de88f59f5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.guestbooks
+_core:
+  default_config_hash: Gb94MsjhcD-RSWGRULFtY3xQs0B4mvfYRw6MWhb0Zw4
+id: node.guestbooks.title
+field_name: title
+entity_type: node
+bundle: guestbooks
+label: Email
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

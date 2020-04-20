@@ -1,0 +1,33 @@
+uuid: d6c91b9c-4ea3-4996-a526-a2545c08a6c9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.carousel_slick.body
+    - field.field.node.carousel_slick.field_diapo
+    - node.type.carousel_slick
+  module:
+    - text
+    - user
+id: node.carousel_slick.teaser
+targetEntityType: node
+bundle: carousel_slick
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_diapo: true
+  langcode: true

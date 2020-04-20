@@ -1,0 +1,31 @@
+uuid: 95f865f4-f0a8-46ee-852c-fadb4c0e2894
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:61d43f28-bbf4-468e-add3-38e69fc81e4e'
+  module:
+    - block_content
+    - system
+  theme:
+    - lecaillou
+id: environnement
+theme: lecaillou
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:61d43f28-bbf4-468e-add3-38e69fc81e4e'
+settings:
+  id: 'block_content:61d43f28-bbf4-468e-add3-38e69fc81e4e'
+  label: Environnement
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /informations
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,11 @@
+uuid: c48559d2-f0b6-44d4-9cf7-54602dbc746d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.hebergement
+id: node.hebergement
+target_entity_type_id: node
+target_bundle: hebergement
+default_langcode: site_default
+language_alterable: false

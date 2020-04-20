@@ -1,0 +1,218 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+/* fonts */
+@font-face
+{
+    font-family: 'italianno';
+    src: url('../fonts/Italianno-Regular-OTF.otf');
+}
+
+@font-face
+{
+    font-family: 'arg';
+    src: url('../fonts/Aaargh.ttf');
+}
+
+.navbar-brand {
+    font-family: 'italianno';
+    font-size: 2em;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../../../../sites/default/images/burger.png');
+}
+
+/* front-page */
+.bando
+{
+    background-color: #E8764A;
+}
+
+.jumbotron {
+    margin-bottom: -15px;
+    background-image: url("../../../../sites/default/images/ble.jpg") ;
+    background-size: cover;
+    min-height: 800px;
+    font-family: 'arg';
+    font-size: 24px;
+    line-height: 60px;
+    color: white;
+    text-align: center;
+    animation-name: couleur;
+    animation-duration: 5s;
+}
+
+.lecaillou {
+    font-size: 1.6em;
+    font-family: 'italianno';
+    color: white;
+    animation-name: couleur;
+    animation-duration: 5s;
+}
+
+@keyframes couleur {
+    from {color: cornflowerblue}
+    to {color: white}
+}
+
+.ecriture {
+    font-family: 'arg';
+}
+
+/* En-tête de page */
+.entete {
+    margin: 15px;
+    font-family: 'arg';
+    border-bottom: 2px inset rgb(0, 99, 58);
+}
+
+/* Nœud accroche hébergement */
+a:hover {
+    text-decoration: none;
+}
+
+.field--name-title {
+    color: green;
+}
+
+.node__title {
+    font-family: 'arg';
+    font-size: 1.8em;
+}
+
+.node-readmore {
+    font-style: italic;
+}
+
+.node--view-mode-teaser {
+    border-bottom: 1px solid rgb(0, 99, 58);
+}
+
+/* Nœud */
+.titre-chambre {
+    font-family: 'arg';
+    color: green;
+}
+
+.description {
+
+}
+
+/* ***** Page Informations ***** */
+.titre-block {
+    font-family: 'arg';
+}
+
+/* icones */
+.icone
+{
+    max-width: 80px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 100px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 100px;
+    height: 100px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    text-align: center;
+    transform: rotateY(180deg);
+    top: 30px;
+}
+
+/* Informations légales */
+.footer
+{
+    background-color: #E8764A;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.legal
+{
+    font-size: small;
+}
+/* ***** fin page Informations ***** */
+
+/* Photos */
+.media--slick {
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+/* footer */
+.site-footer {
+    text-align: center;
+}
+
+.footer_caillou {
+    font-family: 'arg';
+    color: white;
+}
+
+.footer-marque {
+    font-family: 'italianno' ;
+    font-size: 1.5em;
+}
+
+.site-footer__top h2 {
+    border-bottom: none;
+}
+
+.nom {
+    font-size: large;
+}
+
+address {
+    color: white;
+}
+
+
+@media screen and (max-width: 450px)
+{
+   .image-style-medium {
+       display: none;
+   }
+
+    .icone
+    {
+        max-width: 50px;
+    }
+}

@@ -1,0 +1,22 @@
+uuid: 2191502d-c36a-4e7f-b397-14ae389f3a76
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - lecaillou
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: lecaillou_local_tasks
+theme: lecaillou
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
