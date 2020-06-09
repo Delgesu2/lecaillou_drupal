@@ -31,7 +31,7 @@
     background-color: #E8764A;
 }
 
-.jumbotron {
+.jumbofront {
     margin-bottom: -15px;
     background-image: url("../../../../sites/default/images/ble.jpg") ;
     background-size: cover;
@@ -48,7 +48,6 @@
 .lecaillou {
     font-size: 1.6em;
     font-family: 'italianno';
-    color: white;
     animation-name: couleur;
     animation-duration: 5s;
 }
@@ -74,6 +73,35 @@ a:hover {
     text-decoration: none;
 }
 
+.jumbotitres {
+    border: 3px solid #FFFFFF ;
+    margin-top: 3px;
+    color: white;
+    font-family: 'arg';
+    background-image: url("../../../../sites/default/images/ble.jpg") ;
+    background-size: 100% 100%;
+    animation-name: couleur;
+    animation-duration: 5s;
+}
+
+/* Effet sur les accroches */
+.list-group-item {
+    transform: scale(1);
+    transition: transform 400ms, opacity 300ms;
+}
+
+.list-group-item:hover {
+    opacity: 0.7;
+    transform: scale(0.95);
+    transition: transform 400ms, opacity 300ms;
+}
+
+.list-group-item:active {
+    opacity: 0.4;
+    transform: scale(0.9);
+    transition: transform 200ms, opacity 100ms;
+}
+
 .field--name-title {
     color: green;
 }
@@ -88,8 +116,24 @@ a:hover {
 }
 
 .node--view-mode-teaser {
-    border-bottom: 1px solid rgb(0, 99, 58);
+    border-bottom: none;
 }
+
+/*
+.ligne {
+    background-color: green;
+    padding: 2px;
+    margin: 15px;
+    margin-top: -30px;
+    animation-name: pousser;
+    animation-duration: 2s;
+}
+
+@keyframes pousser {
+    from {width: 1%}
+    to {width: 100%}
+}
+*/
 
 /* Nœud */
 .titre-chambre {
@@ -97,8 +141,16 @@ a:hover {
     color: green;
 }
 
+.card {
+
+}
+
 .description {
 
+}
+
+.media--slick img {
+    border: 3px solid #fcf8e3;
 }
 
 /* ***** Page Informations ***** */
@@ -207,12 +259,19 @@ address {
 
 @media screen and (max-width: 450px)
 {
+    /*
    .image-style-medium {
        display: none;
    }
+   */
 
     .icone
     {
         max-width: 50px;
+    }
+
+    .rotation
+    {
+        transform: rotate(90deg);
     }
 }

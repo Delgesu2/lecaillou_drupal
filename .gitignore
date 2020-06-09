@@ -15,7 +15,7 @@
 /web/sites/*/files/
 
 # Ignore 'images' directory
-/web/sites/*/images
+/web/sites/*/imageslus
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
